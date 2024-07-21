@@ -17,7 +17,7 @@ const NavBar = () => {
               {link.name}
             </p>
           </Link>
-        </li>
+        </li> 
       ))}
     </ul>
   );
