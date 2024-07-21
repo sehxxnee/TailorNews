@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { links } from '../data/links';  
+import { links } from '../../data/links';  
 
 const NavBar = () => {
   const pathname = usePathname();
