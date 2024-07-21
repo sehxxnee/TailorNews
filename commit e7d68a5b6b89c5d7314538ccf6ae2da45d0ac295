@@ -1,0 +1,29 @@
+[33mcommit e7d68a5b6b89c5d7314538ccf6ae2da45d0ac295[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: sehxxnee <shyan5253@naver.com>
+Date:   Sun Jul 21 14:02:35 2024 +0900
+
+    feat: connect firebase
+
+[33mcommit 7208f70cfa51e06bc97d8e4f185d9f507cb620ee[m
+Author: sehxxnee <shyan5253@naver.com>
+Date:   Sun Jul 21 13:49:17 2024 +0900
+
+    feat: auth (AuthBox)
+
+[33mcommit 5c5215266ecd01aba8c4a45b4bb2fb3b07270af1[m
+Author: sehxxnee <shyan5253@naver.com>
+Date:   Sun Jul 21 12:50:29 2024 +0900
+
+    feat: GridLayout(GridCell/MessageBox)
+
+[33mcommit 703455a15e9f47e683d2347fcbfa42a18d07b86f[m
+Author: sehxxnee <shyan5253@naver.com>
+Date:   Sun Jul 21 11:31:17 2024 +0900
+
+    feat: header (logo/navbar)
+
+[33mcommit ef253b53eeccf6546ac42488291aed78e6abeca4[m
+Author: sehxxnee <shyan5253@naver.com>
+Date:   Fri Jul 19 11:23:58 2024 +0900
+
+    git init

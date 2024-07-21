@@ -1,4 +1,4 @@
-import Logo from '../components/header/logo';
+import Logo from '../../components/header/logo';
  
   export default function login() { 
   

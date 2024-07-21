@@ -1,9 +1,9 @@
 "use client"; // 클라이언트 측에서만 실행되도록 지정
 
 import React, { useState } from 'react';
-import Header from './components/header/header';
-import GridLayout from './components/grid/GridLayout';
-import AuthBox from './components/auth/AuthBox';
+import Header from '../components/header/header';
+import GridLayout from '../components/grid/GridLayout';
+import AuthBox from '../components/auth/AuthBox';
 
 export default function Home() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
