@@ -7,7 +7,7 @@ interface MessageBoxProps {
 
 const MessageBox: React.FC<MessageBoxProps> = ({ title, highlightText }) => {
   return (
-    <div className=" p-1">
+    <div className="p-1">
       <p className="text-gray-700">
         {title.split(highlightText).map((part, index) => (
           <React.Fragment key={index}>

@@ -1,0 +1,104 @@
+[debug] [2024-07-24T08:19:42.939Z] ----------------------------------------------------------------------
+[debug] [2024-07-24T08:19:42.942Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2024-07-24T08:19:42.942Z] CLI Version:   13.14.0
+[debug] [2024-07-24T08:19:42.942Z] Platform:      win32
+[debug] [2024-07-24T08:19:42.943Z] Node Version:  v20.15.0
+[debug] [2024-07-24T08:19:42.943Z] Time:          Wed Jul 24 2024 17:19:42 GMT+0900 (대한민국 표준시)
+[debug] [2024-07-24T08:19:42.943Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-24T08:19:43.041Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-24T08:19:43.041Z] > authorizing via signed-in user (shyan5253@gmail.com)
+[debug] [2024-07-24T08:19:43.041Z] [iam] checking project tailornews-27e8d for permissions ["firebase.projects.get"]
+[debug] [2024-07-24T08:19:43.043Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tailornews-27e8d:testIamPermissions [none]
+[debug] [2024-07-24T08:19:43.043Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tailornews-27e8d:testIamPermissions x-goog-quota-user=projects/tailornews-27e8d
+[debug] [2024-07-24T08:19:43.043Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tailornews-27e8d:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-07-24T08:19:44.076Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tailornews-27e8d:testIamPermissions 200
+[debug] [2024-07-24T08:19:44.076Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tailornews-27e8d:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-07-24T08:19:44.077Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tailornews-27e8d [none]
+[debug] [2024-07-24T08:19:44.729Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tailornews-27e8d 200
+[debug] [2024-07-24T08:19:44.729Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tailornews-27e8d {"projectId":"tailornews-27e8d","projectNumber":"89104355864","displayName":"tailornews","name":"projects/tailornews-27e8d","resources":{"hostingSite":"tailornews-27e8d","realtimeDatabaseInstance":"tailornews-27e8d-default-rtdb"},"state":"ACTIVE","etag":"1_a3b07200-e6d2-46ef-8bb7-3269fdc78879"}
+[debug] [2024-07-24T08:19:44.732Z] defaultcredentials: writing to file C:\Users\user\AppData\Roaming\firebase\shyan5253_gmail_com_application_default_credentials.json
+[debug] [2024-07-24T08:19:44.734Z] Setting GAC to C:\Users\user\AppData\Roaming\firebase\shyan5253_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\user\\AppData\\Roaming\\firebase\\shyan5253_gmail_com_application_default_credentials.json"}}
+[debug] [2024-07-24T08:19:44.734Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tailornews-27e8d/adminSdkConfig [none]
+[debug] [2024-07-24T08:19:45.092Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tailornews-27e8d/adminSdkConfig 200
+[debug] [2024-07-24T08:19:45.092Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tailornews-27e8d/adminSdkConfig {"projectId":"tailornews-27e8d","databaseURL":"https://tailornews-27e8d-default-rtdb.firebaseio.com","storageBucket":"tailornews-27e8d.appspot.com"}
+[info] i  functions: Watching "C:\Users\user\OneDrive\real_news\tailornews\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\user\\OneDrive\\real_news\\tailornews\\functions\" for Cloud Functions..."}}
+[debug] [2024-07-24T08:19:45.109Z] Validating nodejs source
+[debug] [2024-07-24T08:19:46.285Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: There was an error reading functions\package.json:
+
+ functions\lib\index.js does not exist, can't deploy Cloud Functions {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading functions\\package.json:\n\n functions\\lib\\index.js does not exist, can't deploy Cloud Functions"}}
+[debug] [2024-07-24T08:21:27.409Z] File C:\Users\user\OneDrive\real_news\tailornews\functions\lib\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\user\\OneDrive\\real_news\\tailornews\\functions\\lib\\index.js changed, reloading triggers"}}
+[debug] [2024-07-24T08:21:28.429Z] Validating nodejs source
+[debug] [2024-07-24T08:21:29.636Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-07-24T08:21:29.636Z] Building nodejs source
+[debug] [2024-07-24T08:21:29.637Z] Failed to find version of module node: reached end of search path C:\Users\user\OneDrive\real_news\tailornews\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-07-24T08:21:29.639Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-07-24T08:21:29.643Z] Found firebase-functions binary at 'C:\Users\user\OneDrive\real_news\tailornews\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8316
+
+[debug] [2024-07-24T08:21:30.241Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[info] +  functions[us-central1-helloWorld]: http function initialized (http://localhost:5000/tailornews-27e8d/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5000/tailornews-27e8d/us-central1/helloWorld)."}}
+[debug] [2024-07-24T08:25:02.030Z] Functions emulator received unknown request at path /chat-server-1b34b/us-central/v1/channels

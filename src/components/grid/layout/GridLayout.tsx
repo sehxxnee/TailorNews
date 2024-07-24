@@ -1,6 +1,6 @@
 import React from 'react';
-import GridCell from './GridCell';
-import MessageBox from './MessageBox';
+import GridCell from '../GridCell';
+ 
 
 const GridLayout: React.FC = () => {
   const gridItems = [
@@ -16,12 +16,7 @@ const GridLayout: React.FC = () => {
 
   return ( 
     <div className=" p-9 w-full min-h-screen"> 
-      <div className="mb-4">
-        <MessageBox 
-          title="오늘의 맞춤 뉴스가 배달왔어요!" 
-          highlightText="맞춤 뉴스" 
-        />
-      </div>
+       
       
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
         {gridItems.map((item, index) => (
