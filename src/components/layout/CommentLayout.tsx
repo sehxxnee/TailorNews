@@ -1,5 +1,5 @@
 import React from 'react';
-import CommentGrid from '../CommentGrid';
+import CommentGrid from '../grid/CommentGrid';
 
 interface Comment {
   image: string;

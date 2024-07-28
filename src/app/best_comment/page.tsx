@@ -2,10 +2,10 @@
 
 import React, { useState } from 'react'; 
 import Header from '../../components/header/header';
-import GridLayout from '../../components/grid/layout/GridLayout';
+import GridLayout from '../../components/layout/GridLayout';
 import AuthBox from '../../components/auth/AuthBox'; 
 import MessageBox from '../../components/grid/MessageBox';
-import CommentLayout from '../../components/grid/layout/CommentLayout';
+import CommentLayout from '../../components/layout/CommentLayout';
 
 const comments = [
   {

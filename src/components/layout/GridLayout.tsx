@@ -1,5 +1,5 @@
 import React from 'react';
-import GridCell from '../GridCell';
+import GridCell from '../grid/GridCell';
  
 
 const GridLayout: React.FC = () => {
